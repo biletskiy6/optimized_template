@@ -12,6 +12,7 @@ module.exports = function(){
 		return $.gulp.src('src/static/sass/main.sass')
 		
 		.pipe($.gp.sourcemaps.init())
+		.pipe($.gp.sassGlob())
 		.pipe($.gp.sass())
 		.pipe($.gcmq())
 		.on('error', $.gp.notify.onError({

@@ -1,46 +1,4 @@
-@import "vars"
-@import "libs"
-@import "fonts"
-@import "smart-grid"
-@import "_mixins/mixins"
-
-
-
-::placeholder
-	color: #666
-
-::selection
-	background-color: $accent
-	color: #fff
-
-html, body
-	height: 100%
-
-html
-	box-sizing: border-box
-	*, *:before, *:after
-		box-sizing: inherit
-
-body.home
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.65
-	font-family: $default-font
-	display: flex
-	flex-direction: column
-	height: 100vh
-	overflow-x: hidden
-	input, textarea
-			border: #666 1px solid
-			outline: none
-			&:focus:required:invalid
-				border-color: red
-			&:required:valid
-				border-color: green
-
-+reset()
-
+@import 'default'
 
 
 @import "media"
