@@ -1,4 +1,16 @@
 $(function(){
 	svg4everybody();
-	// Custom Js
+	
+
+	paceOptions = {
+		ajax: true,
+		document: true,
+		eventLag: false, 
+
+	};
+
+	Pace.on('done', function() {
+		$(".preloader").fadeOut();
+	});
+
 });
