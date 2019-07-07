@@ -10,7 +10,6 @@ module.exports = function(){
 	});
 	$.gulp.task('sass:dev', function(){
 		return $.gulp.src('src/static/sass/main.sass')
-		
 		.pipe($.gp.sourcemaps.init())
 		.pipe($.gp.sassGlob())
 		.pipe($.gp.sass())

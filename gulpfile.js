@@ -30,11 +30,11 @@ $.gulp.task('build',$.gulp.series(
 
 $.gulp.task('dev', $.gulp.series(
 	'clean',
-	$.gulp.parallel('sass:dev', 'html', 'scripts', 'fonts', 'svg', 'img:dev')));
+	$.gulp.parallel('sass:dev', 'html', 'scripts:lib', 'scripts', 'fonts', 'svg', 'img:dev')));
 
 $.gulp.task('build', $.gulp.series(
 	'clean',
-	$.gulp.parallel('sass:build', 'html', 'scripts', 'fonts', 'svg', 'img:build')));
+	$.gulp.parallel('sass:build', 'html', 'scripts:build', 'fonts', 'svg', 'img:build')));
 
 $.gulp.task('default', $.gulp.series(
 	'dev',
