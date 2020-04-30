@@ -42,7 +42,7 @@
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-rename": "^1.4.0",
     "gulp-svgstore": "^7.0.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-bez": "^1.0.11",
     "normalize.css": "^8.0.0",
     "pace-js": "^1.0.2",
